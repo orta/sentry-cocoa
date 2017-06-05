@@ -23,5 +23,6 @@ Pod::Spec.new do |s|
 
   s.subspec 'KSCrash' do |ks|
     ks.dependency 'KSCrash', '~> 1.15.8'
+    ks.pod_target_xcconfig = { 'WITH_KSCRASH' => 'TRUE' }
   end
 end
